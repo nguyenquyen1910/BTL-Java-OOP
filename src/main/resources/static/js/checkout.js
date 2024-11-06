@@ -374,7 +374,7 @@ async function xulyDathang(product) {
                 toast({ title: 'Thành công', message: 'Đặt hàng thành công !', type: 'success', duration: 1000 });
                 await deleteCart(currentUser.id);
                 setTimeout(() => {
-                    window.location = "/";
+                    window.location = "/index";
                 }, 2000);
             } else {
                 toast({ title: 'Thất bại', message: 'Đặt hàng không thành công !', type: 'error', duration: 4000 });
